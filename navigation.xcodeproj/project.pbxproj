@@ -6,7 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A4D12D7F2D467DCF00D84BA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */; };
+		A4D12D812D467DF400D84BA7 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		A4F08F432D4238CE0058DE06 /* navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,9 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4D12D7D2D467D9800D84BA7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */,
+				A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A4F08F3A2D4238CE0058DE06 = {
 			isa = PBXGroup;
 			children = (
+				A4D12D7D2D467D9800D84BA7 /* Profile */,
 				A4F08F452D4238CE0058DE06 /* navigation */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
@@ -132,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D12D812D467DF400D84BA7 /* ProfileHeaderView.swift in Sources */,
+				A4D12D7F2D467DCF00D84BA7 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
