@@ -7,11 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40EDE5A2D4D5E67004C4BB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A40EDE4F2D4D5E67004C4BB6 /* Info.plist */; };
+		A40EDE5B2D4D5E67004C4BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40EDE522D4D5E67004C4BB6 /* LaunchScreen.storyboard */; };
+		A40EDE5C2D4D5E67004C4BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40EDE4D2D4D5E67004C4BB6 /* Assets.xcassets */; };
+		A40EDE5D2D4D5E67004C4BB6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE502D4D5E67004C4BB6 /* InfoViewController.swift */; };
+		A40EDE5E2D4D5E67004C4BB6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE552D4D5E67004C4BB6 /* ProfileViewController.swift */; };
+		A40EDE5F2D4D5E67004C4BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE582D4D5E67004C4BB6 /* ViewController.swift */; };
+		A40EDE602D4D5E67004C4BB6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE4E2D4D5E67004C4BB6 /* FeedViewController.swift */; };
+		A40EDE612D4D5E67004C4BB6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE532D4D5E67004C4BB6 /* Post.swift */; };
+		A40EDE622D4D5E67004C4BB6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE572D4D5E67004C4BB6 /* UIViewController+Extensions.swift */; };
+		A40EDE632D4D5E67004C4BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE4C2D4D5E67004C4BB6 /* AppDelegate.swift */; };
+		A40EDE642D4D5E67004C4BB6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE542D4D5E67004C4BB6 /* PostViewController.swift */; };
+		A40EDE652D4D5E67004C4BB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EDE562D4D5E67004C4BB6 /* SceneDelegate.swift */; };
 		A4D12D7F2D467DCF00D84BA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */; };
 		A4D12D812D467DF400D84BA7 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40EDE4C2D4D5E67004C4BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A40EDE4D2D4D5E67004C4BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A40EDE4E2D4D5E67004C4BB6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A40EDE4F2D4D5E67004C4BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A40EDE502D4D5E67004C4BB6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A40EDE512D4D5E67004C4BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A40EDE532D4D5E67004C4BB6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A40EDE542D4D5E67004C4BB6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		A40EDE552D4D5E67004C4BB6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A40EDE562D4D5E67004C4BB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A40EDE572D4D5E67004C4BB6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A40EDE582D4D5E67004C4BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		A4F08F432D4238CE0058DE06 /* navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,11 +52,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4F08F3A2D4238CE0058DE06 = {
+		A40EDE592D4D5E67004C4BB6 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A40EDE4C2D4D5E67004C4BB6 /* AppDelegate.swift */,
+				A40EDE4D2D4D5E67004C4BB6 /* Assets.xcassets */,
+				A40EDE4E2D4D5E67004C4BB6 /* FeedViewController.swift */,
+				A40EDE4F2D4D5E67004C4BB6 /* Info.plist */,
+				A40EDE502D4D5E67004C4BB6 /* InfoViewController.swift */,
+				A40EDE522D4D5E67004C4BB6 /* LaunchScreen.storyboard */,
+				A40EDE532D4D5E67004C4BB6 /* Post.swift */,
+				A40EDE542D4D5E67004C4BB6 /* PostViewController.swift */,
+				A40EDE552D4D5E67004C4BB6 /* ProfileViewController.swift */,
+				A40EDE562D4D5E67004C4BB6 /* SceneDelegate.swift */,
+				A40EDE572D4D5E67004C4BB6 /* UIViewController+Extensions.swift */,
+				A40EDE582D4D5E67004C4BB6 /* ViewController.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		A40EDE662D4D5EAA004C4BB6 /* Prifile */ = {
 			isa = PBXGroup;
 			children = (
 				A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */,
 				A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */,
+			);
+			path = Prifile;
+			sourceTree = "<group>";
+		};
+		A4F08F3A2D4238CE0058DE06 = {
+			isa = PBXGroup;
+			children = (
+				A40EDE662D4D5EAA004C4BB6 /* Prifile */,
+				A40EDE592D4D5E67004C4BB6 /* navigation */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40EDE5A2D4D5E67004C4BB6 /* Info.plist in Resources */,
+				A40EDE5B2D4D5E67004C4BB6 /* LaunchScreen.storyboard in Resources */,
+				A40EDE5C2D4D5E67004C4BB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,11 +172,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D12D812D467DF400D84BA7 /* ProfileHeaderView.swift in Sources */,
+				A40EDE5D2D4D5E67004C4BB6 /* InfoViewController.swift in Sources */,
+				A40EDE5E2D4D5E67004C4BB6 /* ProfileViewController.swift in Sources */,
+				A40EDE5F2D4D5E67004C4BB6 /* ViewController.swift in Sources */,
+				A40EDE602D4D5E67004C4BB6 /* FeedViewController.swift in Sources */,
+				A40EDE612D4D5E67004C4BB6 /* Post.swift in Sources */,
+				A40EDE622D4D5E67004C4BB6 /* UIViewController+Extensions.swift in Sources */,
+				A40EDE632D4D5E67004C4BB6 /* AppDelegate.swift in Sources */,
+				A40EDE642D4D5E67004C4BB6 /* PostViewController.swift in Sources */,
+				A40EDE652D4D5E67004C4BB6 /* SceneDelegate.swift in Sources */,
 				A4D12D7F2D467DCF00D84BA7 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A40EDE522D4D5E67004C4BB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A40EDE512D4D5E67004C4BB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A4F08F572D4238CF0058DE06 /* Debug */ = {
