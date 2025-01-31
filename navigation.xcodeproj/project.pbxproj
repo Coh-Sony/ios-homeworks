@@ -17,27 +17,6 @@
 		A4F08F432D4238CE0058DE06 /* navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A4F08F552D4238CF0058DE06 /* Exceptions for "navigation" folder in "navigation" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = A4F08F422D4238CE0058DE06 /* navigation */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A4F08F452D4238CE0058DE06 /* navigation */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A4F08F552D4238CF0058DE06 /* Exceptions for "navigation" folder in "navigation" target */,
-			);
-			path = navigation;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		A4F08F402D4238CE0058DE06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -49,20 +28,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4D12D7D2D467D9800D84BA7 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */,
-				A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		A4F08F3A2D4238CE0058DE06 = {
 			isa = PBXGroup;
 			children = (
-				A4D12D7D2D467D9800D84BA7 /* Profile */,
-				A4F08F452D4238CE0058DE06 /* navigation */,
+				A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */,
+				A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +59,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A4F08F452D4238CE0058DE06 /* navigation */,
 			);
 			name = navigation;
 			packageProductDependencies = (

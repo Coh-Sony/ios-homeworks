@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController {
+class ProfileViewController: UIViewController {
     private let headerView = ProfileHeaderView()
 
     override func viewDidLoad() {
