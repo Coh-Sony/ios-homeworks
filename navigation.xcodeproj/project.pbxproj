@@ -71,19 +71,19 @@
 			path = navigation;
 			sourceTree = "<group>";
 		};
-		A40EDE662D4D5EAA004C4BB6 /* Prifile */ = {
+		A40EDE662D4D5EAA004C4BB6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				A4D12D802D467DF400D84BA7 /* ProfileHeaderView.swift */,
 				A4D12D7E2D467DCF00D84BA7 /* ProfileViewController.swift */,
 			);
-			path = Prifile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		A4F08F3A2D4238CE0058DE06 = {
 			isa = PBXGroup;
 			children = (
-				A40EDE662D4D5EAA004C4BB6 /* Prifile */,
+				A40EDE662D4D5EAA004C4BB6 /* Profile */,
 				A40EDE592D4D5E67004C4BB6 /* navigation */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
