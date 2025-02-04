@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let feedVC = FeedViewController()
         let profileVC = ProfileViewController()
-
+        
         let feedNavController = UINavigationController(rootViewController: feedVC)
         feedNavController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "list.bullet"), tag: 0)
 
