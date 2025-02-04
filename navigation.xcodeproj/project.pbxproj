@@ -21,6 +21,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A40EDF202D4FF7BE004C4BB6 /* Profile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A4F08F452D4238CE0058DE06 /* navigation */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -45,6 +50,7 @@
 		A4F08F3A2D4238CE0058DE06 = {
 			isa = PBXGroup;
 			children = (
+				A40EDF202D4FF7BE004C4BB6 /* Profile */,
 				A4F08F452D4238CE0058DE06 /* navigation */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
@@ -74,6 +80,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				A40EDF202D4FF7BE004C4BB6 /* Profile */,
 				A4F08F452D4238CE0058DE06 /* navigation */,
 			);
 			name = navigation;
