@@ -49,22 +49,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40EDF5D2D5D6A89004C4BB6 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A40EDF492D591101004C4BB6 /* LaunchScreen.storyboard */,
+				A40EDF472D591101004C4BB6 /* Info.plist */,
+				A40EDF4F2D591101004C4BB6 /* ViewController.swift */,
+				A40EDF4B2D591101004C4BB6 /* Post.swift */,
+				A40EDF482D591101004C4BB6 /* InfoViewController.swift */,
+				A40EDF4E2D591101004C4BB6 /* UIViewController+Extensions.swift */,
+				A40EDF4D2D591101004C4BB6 /* SceneDelegate.swift */,
+				A40EDF462D591101004C4BB6 /* FeedViewController.swift */,
+				A40EDF442D591101004C4BB6 /* AppDelegate.swift */,
+				A40EDF452D591101004C4BB6 /* Assets.xcassets */,
+				A40EDF4C2D591101004C4BB6 /* PostViewController.swift */,
+				A40EDF5F2D5D6AC8004C4BB6 /* profile */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		A40EDF5F2D5D6AC8004C4BB6 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				A40EDF412D591101004C4BB6 /* ProfileViewController.swift */,
+				A40EDF402D591101004C4BB6 /* ProfileHeaderView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		A4F08F3A2D4238CE0058DE06 = {
 			isa = PBXGroup;
 			children = (
-				A40EDF402D591101004C4BB6 /* ProfileHeaderView.swift */,
-				A40EDF412D591101004C4BB6 /* ProfileViewController.swift */,
-				A40EDF442D591101004C4BB6 /* AppDelegate.swift */,
-				A40EDF452D591101004C4BB6 /* Assets.xcassets */,
-				A40EDF462D591101004C4BB6 /* FeedViewController.swift */,
-				A40EDF472D591101004C4BB6 /* Info.plist */,
-				A40EDF482D591101004C4BB6 /* InfoViewController.swift */,
-				A40EDF492D591101004C4BB6 /* LaunchScreen.storyboard */,
-				A40EDF4B2D591101004C4BB6 /* Post.swift */,
-				A40EDF4C2D591101004C4BB6 /* PostViewController.swift */,
-				A40EDF4D2D591101004C4BB6 /* SceneDelegate.swift */,
-				A40EDF4E2D591101004C4BB6 /* UIViewController+Extensions.swift */,
-				A40EDF4F2D591101004C4BB6 /* ViewController.swift */,
+				A40EDF5D2D5D6A89004C4BB6 /* navigation */,
 				A4F08F442D4238CE0058DE06 /* Products */,
 			);
 			sourceTree = "<group>";
