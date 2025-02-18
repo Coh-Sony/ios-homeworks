@@ -28,8 +28,6 @@ class LogInViewController: UIViewController {
         let imageView = UIImageView(image: UIImage(named: "logo"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 10
-        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -40,17 +38,23 @@ class LogInViewController: UIViewController {
         textField.borderStyle = .none
         textField.font = UIFont.systemFont(ofSize: 16)
         textField.textColor = .black
-        textField.backgroundColor = .systemGray6
-        textField.layer.cornerRadius = 10
-        textField.layer.borderWidth = 0.5
-        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.backgroundColor = .clear
         textField.autocapitalizationType = .none
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        // Отступ слева (10 pt)
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
-           textField.leftViewMode = .always
+        textField.leftViewMode = .always
         
         return textField
+    }()
+    
+    // Разделительная линия между полями
+    private let separatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     // Поле пароля
@@ -60,17 +64,28 @@ class LogInViewController: UIViewController {
         textField.borderStyle = .none
         textField.font = UIFont.systemFont(ofSize: 16)
         textField.textColor = .black
-        textField.backgroundColor = .systemGray6
+        textField.backgroundColor = .clear
         textField.isSecureTextEntry = true
-        textField.layer.cornerRadius = 10
-        textField.layer.borderWidth = 0.5
-        textField.layer.borderColor = UIColor.lightGray.cgColor
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        // Отступ слева (10 pt)
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
-            textField.leftViewMode = .always
+        textField.leftViewMode = .always
         
         return textField
+    }()
+    
+    // StackView для полей
+    private let inputStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 0
+        stackView.backgroundColor = .systemGray6
+        stackView.layer.cornerRadius = 10
+        stackView.layer.borderWidth = 0.5
+        stackView.layer.borderColor = UIColor.lightGray.cgColor
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
     }()
     
     // Кнопка Log In
@@ -82,7 +97,7 @@ class LogInViewController: UIViewController {
         button.setBackgroundImage(UIImage(named: "blue_pixel"), for: .normal)
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
-        button.alpha = 1.0  // Нормальное состояние
+        button.alpha = 1.0
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -107,8 +122,13 @@ class LogInViewController: UIViewController {
         scrollView.addSubview(contentView)
         
         contentView.addSubview(logoImageView)
-        contentView.addSubview(emailTextField)
-        contentView.addSubview(passwordTextField)
+        
+        // Добавляем поля в StackView
+        inputStackView.addArrangedSubview(emailTextField)
+        inputStackView.addArrangedSubview(separatorView)
+        inputStackView.addArrangedSubview(passwordTextField)
+        
+        contentView.addSubview(inputStackView)
         contentView.addSubview(loginButton)
     }
     
@@ -133,20 +153,23 @@ class LogInViewController: UIViewController {
             logoImageView.widthAnchor.constraint(equalToConstant: 100),
             logoImageView.heightAnchor.constraint(equalToConstant: 100),
             
+            // StackView (обертка для полей)
+            inputStackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 120),
+            inputStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            inputStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            inputStackView.heightAnchor.constraint(equalToConstant: 101), // 50 + 0.5 + 50
+            
             // Поле Email/Phone
-            emailTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 120),
-            emailTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            emailTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             emailTextField.heightAnchor.constraint(equalToConstant: 50),
             
+            // Разделительная линия
+            separatorView.heightAnchor.constraint(equalToConstant: 0.5),
+            
             // Поле Password
-            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 0),
-            passwordTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            passwordTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             passwordTextField.heightAnchor.constraint(equalToConstant: 50),
             
             // Кнопка Log In
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 16),
+            loginButton.topAnchor.constraint(equalTo: inputStackView.bottomAnchor, constant: 16),
             loginButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             loginButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             loginButton.heightAnchor.constraint(equalToConstant: 50),
