@@ -17,12 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
 
         let feedVC = FeedViewController()
-        let profileVC = ProfileViewController()
+        let loginVC = LogInViewController()  // Заменили ProfileViewController на LogInViewController
 
         let feedNavController = UINavigationController(rootViewController: feedVC)
         feedNavController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "list.bullet"), tag: 0)
 
-        let profileNavController = UINavigationController(rootViewController: profileVC)
+        let profileNavController = UINavigationController(rootViewController: loginVC) // Используем LogInViewController
         profileNavController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
 
         let tabBarController = UITabBarController()
