@@ -179,9 +179,11 @@ class LogInViewController: UIViewController {
 
     // Переход в профиль
     @objc private func loginTapped() {
-        let profileVC = ProfileViewController()
-        navigationController?.pushViewController(profileVC, animated: true)
+        if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate {
+            sceneDelegate.showMainInterface()
+        }
     }
+
     
     // Показываем клавиатуру
     @objc private func keyboardWillShow(notification: Notification) {

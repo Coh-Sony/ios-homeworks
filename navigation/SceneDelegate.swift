@@ -16,29 +16,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
+        let loginVC = LogInViewController() 
+        window?.rootViewController = loginVC
+        window?.makeKeyAndVisible()
+    }
+    
+    func showMainInterface() {
         let feedVC = FeedViewController()
-        let loginVC = LogInViewController()  // Заменили ProfileViewController на LogInViewController
+        let profileVC = ProfileViewController()
 
         let feedNavController = UINavigationController(rootViewController: feedVC)
         feedNavController.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "list.bullet"), tag: 0)
 
-        let profileNavController = UINavigationController(rootViewController: loginVC) // Используем LogInViewController
+        let profileNavController = UINavigationController(rootViewController: profileVC)
         profileNavController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
 
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [feedNavController, profileNavController]
 
         window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
     }
 }
 
-    func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
-    }
     
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
