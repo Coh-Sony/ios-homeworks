@@ -41,15 +41,12 @@ class LogInViewController: UIViewController {
         textField.backgroundColor = .clear
         textField.autocapitalizationType = .none
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        // Отступ слева (10 pt)
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
         textField.leftViewMode = .always
         
         return textField
     }()
     
-    // Разделительная линия между полями
     private let separatorView: UIView = {
         let view = UIView()
         view.backgroundColor = .lightGray
@@ -67,8 +64,6 @@ class LogInViewController: UIViewController {
         textField.backgroundColor = .clear
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        // Отступ слева (10 pt)
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
         textField.leftViewMode = .always
         
@@ -153,11 +148,11 @@ class LogInViewController: UIViewController {
             logoImageView.widthAnchor.constraint(equalToConstant: 100),
             logoImageView.heightAnchor.constraint(equalToConstant: 100),
             
-            // StackView (обертка для полей)
+            // StackView
             inputStackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 120),
             inputStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             inputStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            inputStackView.heightAnchor.constraint(equalToConstant: 101), // 50 + 0.5 + 50
+            inputStackView.heightAnchor.constraint(equalToConstant: 101),
             
             // Поле Email/Phone
             emailTextField.heightAnchor.constraint(equalToConstant: 50),
