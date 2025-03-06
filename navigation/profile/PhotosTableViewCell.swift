@@ -54,6 +54,7 @@ class PhotosTableViewCell: UITableViewCell {
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true
             imageView.layer.cornerRadius = 6
+            imageView.isUserInteractionEnabled = true
             photoStackView.addArrangedSubview(imageView)
         }
 

@@ -174,9 +174,18 @@ class LogInViewController: UIViewController {
 
     // Переход в профиль
     @objc private func loginTapped() {
-        if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate {
-            sceneDelegate.showMainInterface()
-        }
+        let tabBarController = UITabBarController()
+
+        let feedVC = FeedViewController()
+        feedVC.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "list.bullet"), tag: 0)
+
+        let profileVC = ProfileViewController()
+        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
+
+        tabBarController.viewControllers = [feedVC, profileVC]
+        tabBarController.modalPresentationStyle = .fullScreen
+
+        present(tabBarController, animated: true)
     }
 
     

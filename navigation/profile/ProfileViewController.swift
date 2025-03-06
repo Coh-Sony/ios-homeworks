@@ -10,17 +10,21 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     private let tableView = UITableView()
-    
-    private let posts: [Post] = [
-        Post(author: "John Doe", description: "зайка", image: "fig", likes: 240, views: 893),
-        Post(author: "Jane Doe", description: "Рин", image: "fig2", likes: 112, views: 456),
-        Post(author: "Judy Doe", description: "Маленькая", image: "fig3", likes: 320, views: 1023),
-        Post(author: "James Doe", description: "Lucky star", image: "fig5", likes: 150, views: 678)
-    ]
+    private let posts = DataManager.posts
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     private func setupTableView() {
@@ -47,14 +51,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0:
-            return 0
-        case 1:
-            return 1
-        case 2:
-            return posts.count
-        default:
-            return 0
+        case 0: return 0
+        case 1: return 1
+        case 2: return posts.count
+        default: return 0
         }
     }
     
