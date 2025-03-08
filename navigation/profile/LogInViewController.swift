@@ -174,21 +174,10 @@ class LogInViewController: UIViewController {
 
     // Переход в профиль
     @objc private func loginTapped() {
-        let tabBarController = UITabBarController()
-
-        let feedVC = FeedViewController()
-        feedVC.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "list.bullet"), tag: 0)
-
-        let profileVC = ProfileViewController()
-        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.circle"), tag: 1)
-
-        tabBarController.viewControllers = [feedVC, profileVC]
-        tabBarController.modalPresentationStyle = .fullScreen
-
-        present(tabBarController, animated: true)
+        let profileViewController = ProfileViewController()
+        navigationController?.pushViewController(profileViewController, animated: true)
     }
 
-    
     // Показываем клавиатуру
     @objc private func keyboardWillShow(notification: Notification) {
         if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
